@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Munhoz Tickets — Documentos legais</title>
+<meta name="description" content="Termos de Uso e Política de Privacidade do Munhoz Tickets.">
+<style>
+  :root{
+    --fundo:#0f1115; --papel:#161a21; --borda:#262c37;
+    --texto:#e6e8ec; --fraco:#a2a9b6; --destaque:#8b5cf6;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --fundo:#f6f7f9; --papel:#ffffff; --borda:#e3e6ea; --texto:#1b1f27; --fraco:#5b6472; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; min-height:100vh; display:grid; place-items:center;
+    background:var(--fundo); color:var(--texto);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  .wrap{width:100%; max-width:560px; padding:40px 20px}
+  .selo{
+    font-size:12px; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--destaque); font-weight:700;
+  }
+  h1{font-size:28px; margin:8px 0 6px}
+  p.sub{color:var(--fraco); margin:0 0 28px}
+  a.cartao{
+    display:block; text-decoration:none; color:inherit;
+    background:var(--papel); border:1px solid var(--borda); border-radius:12px;
+    padding:18px 20px; margin-bottom:12px; transition:border-color .15s, transform .15s;
+  }
+  a.cartao:hover{border-color:var(--destaque); transform:translateY(-1px)}
+  a.cartao strong{display:block; font-size:17px; margin-bottom:3px}
+  a.cartao span{color:var(--fraco); font-size:14px}
+  footer{margin-top:28px; color:var(--fraco); font-size:14px}
+  footer a{color:var(--destaque)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="selo">Munhoz Systems</div>
+  <h1>Munhoz Tickets</h1>
+  <p class="sub">Documentos legais do aplicativo.</p>
+
+  <a class="cartao" href="termos.html">
+    <strong>Termos de Uso</strong>
+    <span>Regras do plano gratuito e do Premium, pagamento, cancelamento e responsabilidades.</span>
+  </a>
+  <a class="cartao" href="privacidade.html">
+    <strong>Política de Privacidade</strong>
+    <span>Quais dados o bot coleta, por quanto tempo guarda e como pedir a exclusão.</span>
+  </a>
+
+  <footer>
+    Suporte: <a href="https://discord.gg/munhozsystems">discord.gg/munhozsystems</a>
+  </footer>
+</div>
+</body>
+</html>
